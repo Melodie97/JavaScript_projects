@@ -1,0 +1,25 @@
+<!-- The new way of targeting an element in DOM. With Query selector you pass in as an argument 
+    the css syntax for the element you want to targer. It only selects one element at a time -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Here is a paragraph</p>
+    <p id="some-id">Here is a another paragraph</p>
+    <p class="some-class">Here is one more paragraph</p>
+    <script>
+      var pElementId = document.querySelector("#some-id"); //Since it picks just one element at a time it returns the first one only. IDs - #, class-.
+      var pElement = document.querySelector("p");
+      var pElementClass = document.querySelector(".some-class");
+
+      pElementId.style.color = "red";
+      pElement.style.color = "blue";
+      pElementClass.style.color = "pink";
+    </script>
+  </body>
+</html>

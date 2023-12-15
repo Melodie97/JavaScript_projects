@@ -1,0 +1,25 @@
+<!-- The getelementsbyclassname method returns an html collection of all the class name you add to it.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="some-class">Here is a paragraph</p>
+    <p class="some-class">Here is a another paragraph</p>
+    <p class="some-class">Here is one more paragraph</p>
+    <script>
+      var pClass = document.getElementsByClassName("some-class"); // returns [Here is a paragraph, Here is another paragraph, Here is one more paragraph]
+      for (var i = 0; i < pClass.length; i++) {
+        if (i % 2 === 0) {
+          pClass[i].style.color = "red";
+        } else {
+          pClass[i].style.color = "blue";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!-- The getelementsbyTagname method returns an html collection of all the tag name you add to it.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Here is a paragraph</p>
+    <p>Here is a another paragraph</p>
+    <p>Here is one more paragraph</p>
+
+    <script>
+      var pElements = document.getElementsByTagName("p"); // returns [Here is a paragraph, Here is another paragraph, Here is one more paragraph]
+      for (var tags of pElements) {
+        tags.style.color = "red";
+      }
+    </script>
+  </body>
+</html>
